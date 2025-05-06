@@ -60,7 +60,7 @@ namespace SistemaFacturacion
                         FormsAuthentication.SetAuthCookie(username, false);
 
                         // Redirigir al usuario a la página "About.aspx"
-                        Response.Redirect("~/About.aspx");
+                        Response.Redirect("~/Default.aspx");
 
                         // Completar la solicitud actual para evitar procesamiento adicional
                         Context.ApplicationInstance.CompleteRequest();

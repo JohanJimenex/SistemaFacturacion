@@ -3,14 +3,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Sistema de Facturación</title>
+    <title>Sistema Control de Inventario</title>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
 </head>
 <body class="d-flex align-items-center justify-content-center min-vh-100 bg-dar background">
     <form id="form1" runat="server">
         <div class="card bg-dark text-white p-4 shadow-lg" style="width: 22rem; border-radius: 1rem;">
 
-            <h4 class="text-center mb-3 text-warning">Sistema de Facturación</h4>
+            <h4 class="text-center mb-3 text-warning">
+                Sistema <br /> Control de Inventario
+            </h4>
             <h5 class="text-center mb-4">Iniciar Sesión</h5>
 
             <asp:Label ID="lblMessage" runat="server" CssClass="text-danger text-center d-block mb-2"></asp:Label>

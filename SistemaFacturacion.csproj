@@ -116,6 +116,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Imagenes\Favicon.ico" />
     <Content Include="Content\Imagenes\fondo_cajas.jpg" />
     <Content Include="Content\MisEstilos.css" />
     <Content Include="Content\Site.css" />
@@ -244,7 +245,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="App_LocalResources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

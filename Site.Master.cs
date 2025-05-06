@@ -22,5 +22,25 @@ namespace SistemaFacturacion
                 }
             }
         }
+
+        //Metodo para cerrar sesión
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            // Cierra la sesión
+            Session.Clear();
+            Session.Abandon();
+
+            // Elimina autenticación Forms si la estás usando
+            if (Request.Cookies[".ASPXAUTH"] != null)
+            {
+                var cookie = new HttpCookie(".ASPXAUTH");
+                cookie.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(cookie);
+            }
+
+            // Redirige al login
+            Response.Redirect("~/Login.aspx", false);
+        }
+
     }
 }

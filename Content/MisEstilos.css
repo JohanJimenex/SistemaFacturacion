@@ -10,3 +10,22 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.2) 100%), url('Imagenes/fondo_cajas.jpg') no-repeat center center fixed;
     background-size: cover;
 }
+
+#wrapper {
+    min-height: 100vh;
+}
+
+#sidebar-wrapper {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+#page-content-wrapper {
+    flex: 1;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
