@@ -3,24 +3,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Inicio de Sesión</title>
+    <title>Sistema de Facturación</title>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
 </head>
-<body>
+<body class="d-flex align-items-center justify-content-center min-vh-100 bg-dar background">
     <form id="form1" runat="server">
-        <div style="width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
-            <h2>Iniciar Sesión</h2>
-            <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
-            <div>
-                <asp:Label ID="lblUsername" runat="server" Text="Usuario:"></asp:Label>
-                <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+        <div class="card bg-dark text-white p-4 shadow-lg" style="width: 22rem; border-radius: 1rem;">
+
+            <h4 class="text-center mb-3 text-warning">Sistema de Facturación</h4>
+            <h5 class="text-center mb-4">Iniciar Sesión</h5>
+
+            <asp:Label ID="lblMessage" runat="server" CssClass="text-danger text-center d-block mb-2"></asp:Label>
+
+            <div class="mb-3">
+                <asp:Label ID="lblUsername" runat="server" Text="Usuario:" CssClass="form-label" AssociatedControlID="txtUsername" />
+                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control bg-secondary text-white border-0" />
             </div>
-            <div>
-                <asp:Label ID="lblPassword" runat="server" Text="Contraseña:"></asp:Label>
-                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+
+            <div class="mb-3">
+                <asp:Label ID="lblPassword" runat="server" Text="Contraseña:" CssClass="form-label" AssociatedControlID="txtPassword" />
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control bg-secondary text-white border-0" />
             </div>
-            <div style="margin-top: 10px;">
-                <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" OnClick="btnLogin_Click" />
-            </div>
+
+            <asp:Button ID="btnLogin" runat="server" Text="Iniciar Sesión" CssClass="btn btn-warning w-100 fw-bold" OnClick="btnLogin_Click" />
         </div>
     </form>
 </body>
